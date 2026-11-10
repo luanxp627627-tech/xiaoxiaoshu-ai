@@ -1,0 +1,24 @@
+server:
+  port: 7081
+
+spring:
+  application:
+    name: xiaoxiaoshu-mcp-server
+  threads:
+    virtual:
+      enabled: true
+  ai:
+    mcp:
+      server:
+        name: xiaoxiaoshu-mcp
+        version: 1.0.0
+        protocol: streamable
+        type: sync
+        instructions: 小小书自定义 MCP Server，提供 QQ 资料查询等演示工具。
+        streamable-http:
+          mcp-endpoint: /mcp
+
+logging:
+  level:
+    com.quanxiaoha.xiaoxiaoshu.mcp: info
+    io.modelcontextprotocol: info

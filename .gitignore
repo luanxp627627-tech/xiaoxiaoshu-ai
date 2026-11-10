@@ -1,0 +1,49 @@
+# ---------- 构建产物 ----------
+target/
+build/
+*.jar
+*.war
+*.class
+
+# ---------- 前端构建产物（由 web/ 执行 npm run build 生成） ----------
+/src/main/resources/static/ui/
+node_modules/
+dist/
+.vite/
+*.local
+
+# ---------- 日志 ----------
+logs/
+*.log
+*.out
+
+# ---------- 本地数据库文件（仅根目录，勿误伤包路径） ----------
+/data/
+*.mv.db
+*.lock.db
+*.db
+
+# ---------- 本地调试遗留物（根目录） ----------
+/tmp-rag-test.json
+/rag-test-sse.txt
+
+# ---------- IDE ----------
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+
+# ---------- 操作系统 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- 敏感信息 ----------
+*.pem
+*.key
+.env
+.env.local
